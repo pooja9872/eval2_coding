@@ -11,7 +11,7 @@ function RegisterUser() {
       <Container maxWidth="sm">
         <Box
           sx={{
-            bgcolor: "#cfe8fc",
+            bgcolor: "#FEE3EC",
             height: "500px",
             margin: "20px",
             textAlign: "center",
@@ -19,31 +19,40 @@ function RegisterUser() {
           }}
         >
           <div style={{ margin: "20px" }}>
-            <Typography style={{ fontSize: "20px" }}>
+            <Typography style={{ fontSize: "20px", color: "#781D42" }}>
               Register User Forms
             </Typography>
+            <br />
           </div>
 
-          <Typography>First Name</Typography>
+          <Typography style={{ marginLeft: "-119px", marginTop: "10px" }}>
+            First Name:
+          </Typography>
           <TextField
             id="filled-basic"
             label="Enter first name"
             variant="filled"
           />
-          <Typography>Last Name</Typography>
+          <Typography style={{ marginLeft: "-120px", marginTop: "10px" }}>
+            Last Name:
+          </Typography>
           <TextField
             id="filled-basic"
             label="Enter last name"
             variant="filled"
           />
-          <Typography>DOB</Typography>
+          <Typography style={{ marginLeft: "-1px", marginTop: "10px" }}>
+            Date of Birth (DD:MM:YYYY)
+          </Typography>
           <TextField
             id="filled-basic"
             label="Enter date of birth"
             variant="filled"
           />
-          <div style={{ marginTop: "10px" }}>
-            <Button variant="contained">Submit</Button>
+          <div style={{ marginTop: "50px" }}>
+            <Button variant="contained" style={{ backgroundColor: "#4F091D" }}>
+              Submit
+            </Button>
           </div>
         </Box>
       </Container>
